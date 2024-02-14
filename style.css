@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+:root {
+  --primary-color: #de5f8c;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #212224;
+}
+.logo {
+  background-size: contain;
+  height: 50px;
+}
+.navbar {
+  background-color: #212224;
+}
+.navbar-brand {
+  margin-left: 20px;
+  color: var(--primary-color);
+}
+.nav-link {
+  margin-right: 20px;
+  color: white;
+}
+.nav-link:hover {
+  color: var(--primary-color);
+}
+.actived {
+  color: var(--primary-color);
+}
+.container {
+  background-color: #2f2f30;
+  border-radius: 5px;
+}
+.welcome {
+  width: 100%;
+  max-width: 1000px; /* Set a maximum width for larger screens */
+  margin: 0 auto;
+}
+.btn-gallery {
+  background-color: var(--primary-color);
+  color: white;
+  width: 120px;
+  margin-bottom: 10px;
+}
+.btn-gallery:hover {
+  background-color: rgb(221, 43, 72);
+  color: white;
+}
+
+.browse {
+  font-size: 35px;
+  color: var(--primary-color);
+  font-weight: 900;
+}
+.dal {
+  font-size: 35px;
+  color: white;
+}
+.btn-browse {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+}
+.btn-browse:hover {
+  background-color: rgb(221, 43, 72);
+  color: white;
+}
+.btn-actived {
+  background-color: rgb(221, 43, 72);
+  color: white;
+  margin-bottom: 10px;
+  width: 120px;
+}
+.btn-actived:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+footer {
+  font-size: 14px;
+  display: block;
+  bottom: 0;
+  color: white;
+  text-align: center;
+}
+.view {
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  font-family: "Lora", serif;
+}
+.btn-view {
+  background-color: #de5f8c;
+  color: white;
+  border-radius: 8px;
+  margin: 10px;
+}
+.btn-view:hover {
+  background-color: rgb(221, 43, 72);
+  color: white;
+}
+.btn-view:focus {
+  background-color: var(--primary-color);
+}
+/* .card-img {
+  border-radius: 1rem;
+  object-fit: cover;
+  height: 350px;
+  width: 300px;
+  cursor: pointer;
+  transition: transform 1.2s ease;
+}
+.card:hover {
+  transform: translateX(-10px);
+} */
+.navbar-toggler {
+  background-color: var(--primary-color);
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 90vh;
+}
+.txt-gallery {
+  color: white;
+  font-family: "Lora", serif;
+  font-size: 80px;
+}
+
+.welcome,
+.valentines {
+  width: 100%; /* Make the image fill its container */
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  /* Adjust styles for screens with a maximum width of 600px */
+  .banner {
+    max-width: 100%; /* Full width for smaller screens */
+  }
+}
+
+/* === removing default button style ===*/
+.button-gal {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* button styling */
+.button-gal {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #c037ff;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button-gal:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+.costum-collapse {
+  display: flex;
+  flex-direction: column-reverse; /* Set the direction to column-reverse to make it collapse from bottom to top */
+}

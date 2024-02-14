@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Photo Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" class="logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link actived" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dal.html">Dal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="flower.html"><button class="btn btn-gallery btn-sm">My Gift</button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- start of banner -->
+    <div class="container p-0">
+      <div class="welcome mb-3">
+        <!-- <h6 class="text-light">Welcome to Dal Photo Gallery</h6>
+        <div class="row">
+          <div class="d-flex text-uppercase gap-2">
+            <p class="browse">Browse</p>
+            <p class="dal">Photo's</p>
+          </div>
+        </div> -->
+        <img class="valentines" src="images/valentines.png" alt="" />
+      </div>
+    </div>
+    <!-- end of banner -->
+    <!-- carousel -->
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <h3 class="p-3 text-center view">Most View Photo's</h3>
+          <div class="carousel-item active">
+            <img src="images/pic38.jpg" class="d-block w-100 img-home" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/pic5.jpg" class="d-block w-100 img-home" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/pic25.jpg" class="d-block w-100 img-home" alt="..." />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="text-center">
+        <a href="gallery.html" class="btn btn-view outlib"> View More <i class="fa-solid fa-angle-right"></i></a>
+      </div>
+    </div>
+    <!-- end of carouse -->
+
+    <!-- <div class="container">
+      <h3 class="p-3 text-center view">Popular Collection</h3>
+      <div class="row m-3">
+        <div class="card col-lg-4 m-auto border-0 box-shadow" style="width: 19rem">
+          <img src="images/pic1.png" class="mt-2 card-img" alt="..." />
+        </div>
+        <div class="card col-lg-4 m-auto box-shadow" style="width: 19rem">
+          <img src="images/pic2.jpg" class="mt-2 card-img" alt="..." />
+        </div>
+        <div class="card col-lg-4 m-auto box-shadow" style="width: 19rem">
+          <img src="images/pic3.jpg" class="mt-2 card-img" alt="..." />
+        </div>
+      </div>
+
+      <div class="text-center">
+        <button class="btn btn-view">View More <i class="fa-solid fa-angle-right"></i></button>
+      </div>
+    </div> -->
+
+    <!-- footer -->
+    <footer>
+      <hr />
+      <p>Copyright © 2024 Dal Photo Gallery. All right reserved.</p>
+      <p>Design by:Dal</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
